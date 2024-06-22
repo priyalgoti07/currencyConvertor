@@ -13,11 +13,11 @@ const InputBox = ({
 }) => {
 
     const amountInputId = useId();
-
+    console.log("amountInputId",amountInputId);
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className="w-1/2">
-                <label className="text-black/40 mb-2 inline-block" htmlFor={amountInputId}>
+                <label className="text-black/40 mb-2  flex" htmlFor={amountInputId}>
                     {label}
                 </label>
                 <input
